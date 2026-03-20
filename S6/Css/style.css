@@ -31,6 +31,36 @@
   padding-block: 1rem;
 }
 
+.hero {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100dvh;
+  background-color: #010508;
+}
+
+.hero__card {
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+  max-width: 620px;
+  text-align: center;
+}
+
+.hero__title {
+  margin: 0;
+  font-size: 3rem;
+}
+
+.hero__text {
+  margin: 0;
+  color: #bebebe;
+  font-size: 1.125rem;
+}
+
 .section {
   padding-block: 2rem;
 }
