@@ -1,0 +1,74 @@
+/* variables */
+:root {
+  --primary-color: #23b5e8;
+  --black-color: #010508;
+  --white-color: #fefefe;
+  --size: 0.25rem;
+  --transition-duration: 0.3s;
+}
+
+/* globals */
+.body {
+  margin: 0;
+  background-color: var(--black-color);
+  color: var(--white-color);
+  font-family:
+    "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans",
+    Arial, sans-serif;
+}
+
+/* layout */
+.container {
+  max-width: 1280px;
+  padding-inline: 1rem;
+  margin-inline: auto;
+}
+
+/* components */
+.header {
+  background-color: #01050880;
+}
+
+.nav {
+  padding-block: 1rem;
+}
+
+.list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+/* elements */
+.link {
+  text-decoration: none;
+  color: inherit;
+  transition: color var(--transition-duration);
+
+  &:hover {
+    color: var(--primary-color);
+  }
+}
+
+.interactive {
+  margin: 0;
+  font-size: calc(var(--size) * 3.5);
+  font-weight: 600;
+}
+
+/* utils */
+.d-flex {
+  display: flex;
+}
+
+.a-items-center {
+  align-items: center;
+}
+
+.j-content-s-between {
+  justify-content: space-between;
+}
+
+.g-2 {
+  gap: calc(var(--size) * 2);
+}
