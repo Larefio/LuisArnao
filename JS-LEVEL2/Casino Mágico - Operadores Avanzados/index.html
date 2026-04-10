@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+ 
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Casino Math Operators</title>
+</head>
+ 
+<body>
+  <h1>Casino Math Operators</h1>
+ 
+  <script>
+    let feNumber = 8; // Change this
+    let amorosaNumber = 7; // Change this
+    let victories = 0;
+ 
+    // Calculate remainder for feNumber (% 2)
+    const feRemainder = feNumber % 2;
+ 
+    // Calculate remainder for amorosaNumber (% 2)
+    const amorosaRemainder = amorosaNumber % 2;
+ 
+    // Calculate feNumber squared (** 2)
+    const feSquared = feNumber ** 2;
+ 
+    // Calculate amorosaNumber squared (** 2)
+    const amorosaSquared = amorosaNumber ** 2;
+ 
+    // Increment victories
+    victories++;
+ 
+    // BONUS: Use ternary to check if number is even: number % 2 === 0 ? 'par' : 'impar'
+    const feEvenOdd = feNumber % 2 === 0 ? 'par' : 'impar';
+    const amorosaEvenOdd = amorosaNumber % 2 === 0 ? 'par' : 'impar';
+ 
+    console.log(feRemainder);
+    console.log(amorosaRemainder);
+    console.log(feSquared);
+    console.log(amorosaSquared);
+    console.log(victories);
+    console.log(`Fe is ${feEvenOdd}`);
+    console.log(`Amorosa is ${amorosaEvenOdd}`);
+  </script>
+</body>
+ 
+</html>
+ 

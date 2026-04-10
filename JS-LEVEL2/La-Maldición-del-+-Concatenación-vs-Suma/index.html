@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>La Maldición del + - Concatenación vs Suma</title>
+  </head>
+
+  <body>
+    <h1>La Maldición del + - Concatenación vs Suma</h1>
+
+    <script>
+      let number1 = 5; // Change this
+      let number2 = 3; // Change this
+      const string1 = "5";
+      const string2 = "3";
+      // Test 1: number + number
+      console.log(number1 + number2);
+      // Test 2: string + string
+      console.log(string1 + string2);
+      // Test 3: string + number
+      console.log(string1 + number2);
+      // Test 4: number + number + string
+      console.log(number1 + number2 + string1);
+      // Test 5: string + number + number
+      console.log(string1 + number1 + number2);
+      // Show each result and its type with typeof
+      console.log(typeof (number1 + number2));
+      console.log(typeof (string1 + string2));
+      console.log(typeof (string1 + number2));
+      console.log(typeof (number1 + number2 + string1));
+      console.log(typeof (string1 + number2 + number1));
+    </script>
+  </body>
+</html>

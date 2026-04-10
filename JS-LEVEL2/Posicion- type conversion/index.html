@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+ 
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Position Type Conversion</title>
+</head>
+ 
+<body>
+  <h1>Position Type Conversion</h1>
+ 
+  <script>
+    const invisibilityDuration = '30';
+    const strengthLevel = 8;
+    const speedActive = 1;
+ 
+    // console.log(typeof invisibilityDuration);
+ 
+    // Convert invisibilityDuration to number
+    const invisibilityDurationNumber = Number(invisibilityDuration);
+    // console.log(typeof invisibilityDurationNumber);
+ 
+    // Convert strengthLevel to string
+    const strengthLevelString = String(strengthLevel);
+    // console.log(typeof strengthLevelString);
+ 
+    // Convert speedActive to boolean
+    const speedActiveBoolean = Boolean(speedActive)
+ 
+    // Create message: "Pociones listas! Invisibilidad: X min, Fuerza: Y, Velocidad: Z"
+    const message = `Pociones listas! Invisibilidad: ${invisibilityDurationNumber} min, Fuerza: ${strengthLevelString}, Velocidad: ${speedActiveBoolean}`;
+    console.log(message);
+  </script>
+</body>
+ 
+</html>

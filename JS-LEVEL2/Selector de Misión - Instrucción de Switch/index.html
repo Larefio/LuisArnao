@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+ 
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mission Selector Switch</title>
+</head>
+ 
+<body>
+  <h1>Mission Selector Switch</h1>
+ 
+  <script>
+    let day = +prompt('¿Qué día es? (1 para lunes, 2 para martes, ..., 7 para domingo):');
+    let mission = '';
+ 
+    switch (day) {
+      case 1:
+        mission = 'Entreñar ⚔️';
+        break;
+      case 2:
+        mission = 'Martes: Recolectar 🪓';
+        break;
+      case 3:
+        mission = 'Miércoles: Mazmorras 🗝️';
+        break;
+      case 4:
+        mission = 'Jueves: Comercio 🛒';
+        break;
+      case 5:
+        mission = 'Viernes: Taberna 🍺';
+        break;
+      case 6:
+        mission = 'Sábado: Aventuras 🏞️';
+        break;
+      case 7:
+        mission = 'Domingo: Fiesta 🎉';
+        break;
+      default:
+        mission = 'Día inválido. Por favor ingresa un número del 1 al 7.';
+        break;
+    }
+ 
+    alert(mission);
+  </script>
+</body>
+ 
+</html>

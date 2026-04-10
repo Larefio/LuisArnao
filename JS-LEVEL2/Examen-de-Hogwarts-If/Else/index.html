@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+ 
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hogwarts if Else</title>
+</head>
+ 
+<body>
+  <h1>Hogwarts if Else</h1>
+  <script>
+    let brave = null;
+    let clever = null;
+    let loyal = null;
+    let house = '';
+ 
+    // Ask: ¿Eres valiente? (sí/no)
+    brave = confirm('¿Eres valiente?');
+ 
+    // Ask: ¿Eres astuto/a? (sí/no)
+    clever = confirm('¿Eres astuto/a?');
+ 
+    // Ask: ¿Eres leal? (sí/no)
+    loyal = confirm('¿Eres leal?');
+ 
+    // Use if/else to determine house
+    if (brave && !clever) {
+      house = 'Gryffindor';
+    } else if (clever && !loyal) {
+      house = 'Slytherin';
+    } else if (clever && loyal) {
+      house = 'Ravenclaw';
+    } else {
+      house = 'Hufflepuff';
+    }
+ 
+    alert(`Tu casa es: ${house}`);
+ 
+    // Gryffindor: brave && !clever
+    // Slytherin: clever && !loyal
+    // Ravenclaw: clever && loyal
+    // Hufflepuff: default (else)
+ 
+  </script>
+</body>
+ 
+</html>
+ 

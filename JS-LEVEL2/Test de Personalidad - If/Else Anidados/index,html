@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+ 
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pet Personality if else </title>
+</head>
+ 
+<body>
+  <h1>Pet Personality if else </h1>
+ 
+  <script>
+    // Ask: ¿Comida favorita? (pizza/sushi/galletas)
+    const favoriteFood = prompt("¿Comida favorita? (pizza/sushi/galletas)");
+ 
+    // Ask: ¿Actividad favorita? (correr/leer/dormir)
+    const favoriteActivity = prompt("¿Actividad favorita? (correr/leer/dormir)");
+ 
+    // Ask: ¿Lugar favorito? (parque/casa/cama)
+    const favoritePlace = prompt("¿Lugar favorito? (parque/casa/cama)");
+ 
+    // Use if/else to determine pet
+    // Dog: pizza && correr
+    // Cat: sushi && leer
+    // Hamster: dormir
+    // Dragon: else (default)
+ 
+    if (favoriteFood === "pizza" && favoriteActivity === "correr") {
+      alert("Tu mascota es un perro 🐶");
+    } else if (favoriteFood === "sushi" && favoriteActivity === "leer") {
+      alert("Tu mascota es un gato 🐱");
+    } else if (favoriteActivity === "dormir") {
+      alert("Tu mascota es un hámster 🐹");
+    } else {
+      alert("Tu mascota es un dragón 🐉");
+    }
+  </script>
+</body>
+ 
+</html>
