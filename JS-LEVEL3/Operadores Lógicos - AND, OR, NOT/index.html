@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+ 
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Logical Operators</title>
+</head>
+ 
+<body>
+  <h1>Logical Operators</h1>
+ 
+  <script>
+    let age = 20;
+    let hasInvite = true;
+    let isVIP = false;
+    let hasPass = false;
+    let isBanned = false;
+ 
+    if (age >= 18 && hasInvite && isBanned === false) {
+      if (isVIP || hasPass) {
+        console.log("Puedes entrar a la zona VIP.");
+      } else {
+        console.log("Puedes entrar a la fiesta.");
+      }
+    } else {
+      console.log("No puedes entrar a la fiesta.");
+    }
+  </script>
+</body>
+ 
+</html>

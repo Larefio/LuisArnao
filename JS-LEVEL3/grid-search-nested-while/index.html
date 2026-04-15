@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+ 
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Grid Search Nested While</title>
+</head>
+ 
+<body>
+  <h1>Grid Search Nested While</h1>
+ 
+  <script>
+    const gridSize = 3;
+    const targetRow = 3;
+    const targetCol = 3;
+    let row = 0;
+    let found = false;
+    let checked = 0;
+ 
+    while (row < gridSize && !found) {
+      let col = 0;
+      while (col < gridSize && !found) {
+        checked++;
+        if (row === targetRow && col === targetCol) {
+          found = true;
+          break;
+        }
+        col++;
+      }
+      row++;
+    }
+ 
+    console.log(`Número de celdas revisadas: ${checked}`);
+    console.log(`Cristal encontrado: ${found}`);
+  </script>
+</body>
+ 
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+ 
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Break Search</title>
+</head>
+ 
+<body>
+  <h1>Break Search</h1>
+ 
+  <script>
+    const target = 100;
+    const limit = 50;
+    let found = false;
+    let iterations = 0;
+ 
+    while (!found && iterations < limit) {
+      if (iterations === target) {
+        found = true;
+        console.log(`Found ${target} at iteration ${iterations}`);
+      } else {
+        console.log(`Iteration ${iterations}: Not found yet.`);
+      }
+      iterations++;
+    }
+ 
+    if (!found) {
+      console.log(`Reached the limit of ${limit} iterations without finding ${target}.`);
+    }
+  </script>
+</body>
+ 
+</html>

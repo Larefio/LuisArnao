@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+ 
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Star Pyramid Nested</title>
+</head>
+ 
+<body>
+  <h1>Star Pyramid Nested</h1>
+ 
+  <script>
+    let height = 3;
+    let totalStars = 0;
+ 
+    let i = 0;
+ 
+    while (i < height) {
+      let j = 0;
+      let row = '';
+ 
+      while (j <= i) {
+        row += '*';
+        totalStars++;
+        j++;
+      }
+      console.log(row);
+      i++;
+    }
+ 
+    console.log('Total Stars:', totalStars);
+ 
+    // for (let i = 1; i <= height; i++) {
+    //   let row = '';
+    //   for (let j = 1; j <= i; j++) {
+    //     row += '*';
+    //   }
+    //   console.log(row);
+    //   totalStars += i;
+    // }
+  </script>
+</body>
+ 
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+ 
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Multiplication Table For</title>
+</head>
+ 
+<body>
+  <h1>Multiplication Table For</h1>
+ 
+  <script>
+    const table = 8;
+    let upTo = 10;
+    let sum = 0;
+ 
+    for (let index = 1; index <= upTo; index++) {
+      const result = table * index;
+ 
+      console.log(`${table} x ${index} = ${result}`);
+      sum += result;
+    }
+ 
+    console.log(`Sum: ${sum}`);
+  </script>
+</body>
+ 
+</html>
+ 
